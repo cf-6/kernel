@@ -1301,7 +1301,7 @@ class KernelTranslator:
         if output_file:
             with open(output_file, 'w', encoding='utf-8') as f:
                 f.write(output)
-            print(f"{Colors.GREEN}✅ 已翻译到: {output_file}{Colors.ENDC}")
+            print(f"{Colors.GREEN} 已翻译到: {output_file}{Colors.ENDC}")
         else:
             print(output)
         
@@ -1349,7 +1349,7 @@ def main():
         
         # 显示错误
         if errors:
-            print(f"\n{Colors.RED}⚠️ 发现 {len(errors)} 个警告/错误:{Colors.ENDC}")
+            print(f"\n{Colors.RED} 发现 {len(errors)} 个警告/错误:{Colors.ENDC}")
             for err in errors[:10]:
                 print(f"  {err}")
             if len(errors) > 10:
@@ -1422,7 +1422,7 @@ try {
         for err in errors:
             print(f"  {err}")
     else:
-        print(f"{Colors.GREEN}✅ 测试通过！{Colors.ENDC}")
+        print(f"{Colors.GREEN} 运行通过！{Colors.ENDC}")
     
     print("\n生成的代码预览：")
     print("-" * 40)
